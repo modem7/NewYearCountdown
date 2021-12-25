@@ -1,4 +1,6 @@
-# newyear-countdown
+# Self Hosted, self contained New Year Countdown clock
+
+![Docker Pulls](https://img.shields.io/docker/pulls/modem7/newyearcountdown) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/modem7/newyearcountdown/latest) [![Build Status](https://drone.modem7.com/api/badges/modem7/NewYearCountdown/status.svg)](https://drone.modem7.com/modem7/NewYearCountdown)
 
 Web app that counts down to next January 1st. It selects automatically the next year (based on local system time). Background images are made with svg inline tags.
 
@@ -8,30 +10,19 @@ See a preview: https://patrickgold.github.io/newyear-countdown/
 
 Original creator: https://github.com/patrickgold/newyear-countdown
 
-## Changelogs
+# Container Screenshot
+![image](https://user-images.githubusercontent.com/4349962/147395358-ec5bcffc-5bf2-4b43-af5f-5459f5d14b00.png)
 
-### Version 2018-12-21:
+# Configuration
 
-- Animated "Happy New Year" message.
-- Clouds now move on the screen.
-- Design & performance optimization.
-- Now using BEM naming convention for better further development.
-- Added "Fork me on GitHub" banner.
+```bash
+version: "2.4"
 
-### Version 2018-01-08:
+services:
 
-- Bugfix for users using Safari Browser:<br>
-    On iOS Safari Browser, the following won't work:<br>
-    ```var date = new Date("2018-01-01"); ```<br>
-    Instead you have to write the following:<br>
-    ```var date = new Date("2018/01/01"); ```<br>
-    The new version of the Date() now includes a slash instead of a "-". This is now compatible to all of the major browsers.
-
-## Author
-* [Patrick Goldinger](https://github.com/patrickgold)
-
-## License
-
-Licensed under the [MIT License](LICENSE).
-
-
+  newyearcountdown:
+    image: modem7/newyearcountdown
+    container_name: NewYearCountdown
+    ports:
+      - 80:80
+```
