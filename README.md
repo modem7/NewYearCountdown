@@ -6,7 +6,7 @@ Web app that counts down to next January 1st. It selects automatically the next 
 
 Ported to Docker container by Modem7.
 
-See a preview: https://patrickgold.github.io/newyear-countdown/
+See a preview: https://modem7.github.io/Docker-NewYearCountdown/
 
 Original creator: https://github.com/patrickgold/newyear-countdown
 
