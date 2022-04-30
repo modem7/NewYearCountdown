@@ -14,6 +14,10 @@ Original creator: https://github.com/patrickgold/newyear-countdown
 # Container Screenshot
 ![image](https://user-images.githubusercontent.com/4349962/147395358-ec5bcffc-5bf2-4b43-af5f-5459f5d14b00.png)
 
+# Breaking change
+Due to changing the image to nginxinc/nginx-unprivileged, the ports have changed from `80` to `8080`. 
+Please update your files accordingly.
+
 # Configuration
 
 ```bash
@@ -25,5 +29,5 @@ services:
     image: modem7/newyearcountdown
     container_name: NewYearCountdown
     ports:
-      - 80:80
+      - 8080:8080
 ```
