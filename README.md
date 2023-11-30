@@ -3,6 +3,8 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/modem7/newyearcountdown) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/modem7/newyearcountdown/latest)
 [![Build Status](https://drone.modem7.com/api/badges/modem7/Docker-NewYearCountdown/status.svg)](https://drone.modem7.com/modem7/Docker-NewYearCountdown)
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/modem7)
+
 Web app that counts down to next January 1st. It selects automatically the next year (based on local system time). Background images are made with svg inline tags.
 
 Ported to Docker container by Modem7.
